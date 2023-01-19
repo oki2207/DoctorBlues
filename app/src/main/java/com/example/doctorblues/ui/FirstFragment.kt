@@ -7,10 +7,10 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.example.doctorblues.R
-import com.example.doctorblues.databinding.FragmentHomeBinding
+import com.example.doctorblues.databinding.FragmentFirstscreenBinding
 
-class HomeFragment: Fragment() {
-    private lateinit var binding: FragmentHomeBinding
+class FirstFragment: Fragment() {
+    private lateinit var binding: FragmentFirstscreenBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -19,7 +19,7 @@ class HomeFragment: Fragment() {
     ): View? {
         binding = DataBindingUtil.inflate(
             inflater,
-            R.layout.fragment_home,
+            R.layout.fragment_firstscreen,
             container, false
 
         )

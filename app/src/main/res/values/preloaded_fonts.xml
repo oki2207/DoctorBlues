@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
         <item>@font/alex_brush</item>
+        <item>@font/allerta_stencil</item>
+        <item>@font/fjalla_one</item>
         <item>@font/major_mono_display</item>
         <item>@font/megrim</item>
+        <item>@font/supermercado_one</item>
         <item>@font/viga</item>
     </array>
 </resources>

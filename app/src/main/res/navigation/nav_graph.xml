@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.doctorblues.ui.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/illFragment"
+        android:name="com.example.doctorblues.ui.IllFragment"
+        android:label="IllFragment" />
+    <fragment
+        android:id="@+id/forOtherFragment"
+        android:name="com.example.doctorblues.ui.ForOtherFragment"
+        android:label="ForOtherFragment" />
+    <fragment
+        android:id="@+id/tippsFragment"
+        android:name="com.example.doctorblues.ui.TippsFragment"
+        android:label="TippsFragment" />
+    <fragment
+        android:id="@+id/selftestFragment"
+        android:name="com.example.doctorblues.ui.SelftestFragment"
+        android:label="SelftestFragment" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.example.doctorblues.ui.HelpFragment"
+        android:label="HelpFragment" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.doctorblues.ui.SplashFragment"
+        android:label="SplashFragment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.doctorblues.ui.LoginFragment"
+        android:label="LoginFragment" />
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.doctorblues.ui.FirstFragment"
+        android:label="FirstFragment" />
+</navigation>
