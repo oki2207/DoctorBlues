@@ -40,4 +40,8 @@
         android:id="@+id/firstFragment"
         android:name="com.example.doctorblues.ui.FirstFragment"
         android:label="FirstFragment" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.doctorblues.MainActivity"
+        android:label="MainActivity" />
 </navigation>

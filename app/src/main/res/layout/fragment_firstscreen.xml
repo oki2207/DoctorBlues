@@ -11,14 +11,56 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView"
+        <Button
+            android:id="@+id/button_firstscreen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hallo, "
+            android:layout_marginTop="600dp"
+            android:backgroundTint="#4D86DC"
+            android:text="@string/los_gehts"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="#EBA5F7"
+            app:strokeWidth="1sp" />
+
+        <TextView
+            android:id="@+id/text_hallo_firstscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="350dp"
+            android:text="Hallo,"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/button_firstscreen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_firstscreen"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:text="Wir wissen deine Situation scheint für dich aussichtslos! Du musst doch eine Bindung zu deinem Kind haben! Das ist leider das Wunschdenken.  Und du musst wissen. Du bist nicht allein. Ganze 50-80 % aller Mütter zeigen im Laufe der ersten Woche nach der Entbindung Symptome des so genannten „Baby Blues“, einer kurz dauernden depressiven Verstimmung. Ganze 10-15% davon entwickeln sogar eine Postpartale Depression. Das Thema wird leider nicht so ernst genommen wie es sein sollte. Man muss akzeptieren das man Krank ist. Es ist eine tückische Krankheit. Und wir versprechen dir es geht aufwärts. Das wichtigste ist Hilfe. Aber dadurch dass das Thema oftmals wie ein Tabu behandelt wird, ist Hilfe finden oft schwer. Und es ist sehr schwer in so einer Situation noch die Kraft aufzuwenden sich um Hilfe zu kümmern. Diese App wird dich nicht heilen. Allerdings möchten wir dich begleiten. Hier findest du Tipps für dich und deinen Partner, um am besten mit der Situation umzugehen. Zusätzlich findest du Anlaufstellen in deiner Nähe. Der Internetdschungel ist oftmals überfordernd, gerade in dieser Situation. Diese App soll dir und ggf. deinem Partner das Leben deutlich vereinfachen, was das finden von Hilfe betrifft. Wir hoffen dir gehts schon bald besser und wir konnten dich dabei unterstützen. "
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/button_firstscreen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_hallo_firstscreen" />
+
+        <TextView
+            android:id="@+id/text_yourBlues_firstscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="430dp"
+            android:layout_marginBottom="16dp"
+            android:text="Dein Team von Doctor Blues."
+            app:layout_constraintBottom_toTopOf="@+id/button_firstscreen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_firstscreen" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

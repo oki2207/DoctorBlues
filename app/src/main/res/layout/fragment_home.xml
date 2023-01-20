@@ -15,25 +15,15 @@
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appbar"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"/>
-
-        <androidx.core.widget.NestedScrollView
-            android:id="@+id/nestedScrollView"
             android:layout_width="match_parent"
-
-            android:layout_height="match_parent"
-            android:contentDescription="@string/app_name"
-            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
-
-        </androidx.core.widget.NestedScrollView>
+            android:layout_height="46dp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/greets_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Hier ist dein Bereich! Du kannst der Community beitreten, sowie Anlaufstation suchen und dir Tipps ansehen!"
