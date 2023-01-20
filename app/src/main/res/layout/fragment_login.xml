@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:backgroundTint="#4D86DC"
-            android:ems="10"
+            android:ems="30"
             android:inputType="textPersonName"
             android:text="Name"
             app:layout_constraintEnd_toEndOf="@+id/blues_logo"

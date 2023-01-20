@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/startFragment">
 
     <fragment
         android:id="@+id/homeFragment"
@@ -44,4 +44,30 @@
         android:id="@+id/mainActivity"
         android:name="com.example.doctorblues.MainActivity"
         android:label="MainActivity" />
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.doctorblues.ui.StartFragment"
+        android:label="StartFragment" >
+        <action
+            android:id="@+id/action_startFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_illFragment"
+            app:destination="@id/illFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_illFragment2"
+            app:destination="@id/illFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_tippsFragment"
+            app:destination="@id/tippsFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_forOtherFragment"
+            app:destination="@id/forOtherFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_selftestFragment"
+            app:destination="@id/selftestFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+    </fragment>
 </navigation>

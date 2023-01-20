@@ -7,80 +7,12 @@
 
     </data>
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
 
-        <com.google.android.material.appbar.AppBarLayout
-            android:id="@+id/appbar"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent">
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/tool"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="#4D86DC"
-                app:layout_scrollFlags="scroll|enterAlways"
-                app:subtitleTextColor="#FFFFFF"
-                app:title="DOCTOR BLUES"
-                app:titleTextAppearance="@style/DoctorBlues"
-                app:titleTextColor="#FFFFFF"></androidx.appcompat.widget.Toolbar>
-
-            <com.google.android.material.tabs.TabLayout
-                android:id="@+id/tabs"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_scrollFlags="scroll|enterAlways"
-
-                app:tabMode="scrollable">
-
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/home_tab"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Home" />
-
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/krankheit_tab"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Krankheit" />
-
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/selftest_tab"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Selbsttest" />
-
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/tipps_tab"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tipps" />
-
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/forpartner_tab"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="für den Partner" />
-
-                <com.google.android.material.tabs.TabItem
-                    android:id="@+id/help_tab"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Hilfe" />
-            </com.google.android.material.tabs.TabLayout>
-        </com.google.android.material.appbar.AppBarLayout>
-
-        <androidx.core.widget.NestedScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
-
-        </androidx.core.widget.NestedScrollView>
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>
