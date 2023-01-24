@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/fly_image"
+            android:layout_width="121dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/flys" />
+
+        <TextView
+            android:id="@+id/name_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/roboto"
+            android:text="Dr. Max Mustermann"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/fly_image"
+            app:layout_constraintTop_toTopOf="@+id/fly_image" />
+
+        <TextView
+            android:id="@+id/adresse_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"
+            android:text="Mustermannstraße 23 \n47475 Duisburg"
+            android:textSize="17dp"
+            app:layout_constraintStart_toStartOf="@+id/name_user"
+            app:layout_constraintTop_toBottomOf="@+id/name_user" />
+
+        <TextView
+            android:id="@+id/numer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"
+            android:text="0203-864284"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="@+id/fly_image"
+            app:layout_constraintStart_toStartOf="@+id/adresse_text"
+            app:layout_constraintTop_toBottomOf="@+id/adresse_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

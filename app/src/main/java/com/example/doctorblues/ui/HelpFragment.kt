@@ -6,12 +6,21 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.doctorblues.R
+import com.example.doctorblues.adapter.RvAdapter
+import com.example.doctorblues.data.User
 import com.example.doctorblues.databinding.FragmentHelpBinding
 import com.example.doctorblues.databinding.FragmentIllBinding
 
 class HelpFragment: Fragment() {
     private lateinit var binding: FragmentHelpBinding
+    private lateinit var rv: RecyclerView
+    private lateinit var layoutManager: LinearLayoutManager
+    private lateinit var adapter: RvAdapter
+    private lateinit var content: MutableList<User>
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -27,8 +36,92 @@ class HelpFragment: Fragment() {
         return binding.root
     }
 
+    private fun initRecyclerView() {
+        rv = binding.rv
+        adapter = RvAdapter(content)
+        rv.layoutManager = layoutManager
+        rv.adapter = adapter
+        rv.addItemDecoration(DividerItemDecoration(rv.context,layoutManager.orientation))
+    }
+
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        //TODO: CODE
+        fun initContent() {
+            
+        }
+
+            content = mutableListOf<User>()
+            content.add(
+                User(
+                    content.size + 1,
+                    "Leonardo",
+                    "Dicaprio",
+                    "leo333@gmail.com",
+                    "0176-4563896",
+                    R.drawable.flys
+
+                )
+            )
+            content.add(
+                User(
+                    content.size + 1,
+                    "Carlo",
+                    "Colucci",
+                    "carly111@gmail.com",
+                    "0171-45833895",
+                    R.drawable.flys
+                )
+
+                )
+            content.add(
+                User(
+                    content.size + 1,
+                    "Rudolf",
+                    "Weihnachtsmann",
+                    "nordpolstern@gmail.com",
+                    "0152-24122022",
+                    R.drawable.flys
+
+                )
+                        )
+
+        content.add(
+            User(
+                content.size + 1,
+                "Carlo",
+                "Colucci",
+                "carly111@gmail.com",
+                "0171-45833895",
+                R.drawable.flys
+            )
+
+        )
+        content.add(
+            User(
+                content.size + 1,
+                "Carlo",
+                "Colucci",
+                "carly111@gmail.com",
+                "0171-45833895",
+                R.drawable.flys
+            )
+
+        )
+        content.add(
+            User(
+                content.size + 1,
+                "Rudolf",
+                "Weihnachtsmann",
+                "nordpolstern@gmail.com",
+                "0152-24122022",
+                R.drawable.flys
+
+            )
+        )
+        val rvAdapter=RvAdapter(content)
+        binding.rv.adapter=rvAdapter
+
+
     }
 }
