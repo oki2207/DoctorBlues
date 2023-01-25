@@ -25,12 +25,12 @@ class RvAdapter(var content:MutableList<User>): RecyclerView.Adapter<RvAdapter.V
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item:User = content[position]
+        val item = content[position]
         holder.name.text = item.name.toString()
-        holder.adresse.text = item.email.toString()
+        holder.adresse.text = item.adresse.toString()
         holder.number.text = item.phoneNumber.toString()
-        holder.pic.setImageResource(item.pic)
-
+        holder.pic.setImageResource(R.drawable.flys)
+        
     }
 
     override fun getItemCount(): Int {

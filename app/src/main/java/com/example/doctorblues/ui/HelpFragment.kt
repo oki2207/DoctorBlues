@@ -55,10 +55,10 @@ class HelpFragment: Fragment() {
             content.add(
                 User(
                     content.size + 1,
-                    "Leonardo",
-                    "Dicaprio",
-                    "leo333@gmail.com",
-                    "0176-4563896",
+                    "Dr.",
+                    "Feldmann",
+                    "Musternmannstraße 34 \n47398 Duisburg",
+                    "0203-4563896",
                     R.drawable.flys
 
                 )
@@ -77,9 +77,9 @@ class HelpFragment: Fragment() {
             content.add(
                 User(
                     content.size + 1,
-                    "Rudolf",
+                    "Dr.",
                     "Weihnachtsmann",
-                    "nordpolstern@gmail.com",
+                    "Klostermannstraße 34 \n47240 Duisburg",
                     "0152-24122022",
                     R.drawable.flys
 
@@ -122,6 +122,17 @@ class HelpFragment: Fragment() {
         val rvAdapter=RvAdapter(content)
         binding.rv.adapter=rvAdapter
 
+
+    }
+
+    fun checkInputPlz (input:String):Boolean{
+        if(input.length == 5){
+            return true
+
+        } else {
+            //hier könnte die Fehlermeldung stehen!!
+            return false
+        }
 
     }
 }

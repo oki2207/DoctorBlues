@@ -1,3 +1,3 @@
 package com.example.doctorblues.data
 
-data class User(var id:Int, var firstName:String, var name:String, var email:String, var phoneNumber:String, var pic: Int)
+data class User(var id:Int, var title:String, var name:String, var adresse:String, var phoneNumber:String, var pic: Int)

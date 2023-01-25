@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -11,6 +12,48 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.ForOtherFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title_forother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="cursive"
+                android:text="Für den Partner"
+                android:textColor="#EBA5F7"
+                android:textSize="40sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/forother_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:text="Was kann der Partner tun?\n\nDer Partner kann das gleiche tun wie bei der Geburt – im Grunde gar nichts und doch ganz viel. Ihr könnt nichts tun, damit es aufhört, das müsst Ihr aber auch gar nicht, denn der Babyblues hört von alleine auf. Rationale Argumente wie “Es gibt doch keinen Grund zu heulen, wir haben ein gesundes Kind und alles ist gut” sind in der Regel eher kontraproduktiv, denn das weiß die Frau selbst. Sie kann ihre Gefühle nur eben nicht abstellen. Also zeigt einfach Verständnis.\n\nDas Wichtigste ist, dass Ihr in dieser Zeit für Eure Partnerin da seid. Sie verwöhnt und ihr zeigt, dass ihr sie liebt und stolz auf sie seid (was meistens mit Tränen der Rührung und Dankbarkeit quittiert wird). Ihr könnt mit ihr über die Geburt reden, Eure Gefühle dabei und wie ihr es erlebt habt. Und ihr könnt ganz praktisch dafür sorgen, dass sie sich auf sich und ihre neue Rolle konzentrieren kann, indem ihr Besucher abwimmelt, das Baby mal übernehmt, damit sie in Ruhe duschen oder schlafen kann und dafür sorgt, dass genug Essen im Haus ist."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_forother" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="19dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/forother_text"
+                app:srcCompat="@drawable/love" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

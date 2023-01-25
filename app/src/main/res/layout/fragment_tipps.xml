@@ -9,6 +9,47 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tipps_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="cursive"
+            android:text="Tipps"
+            android:textColor="#EBA5F7"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tipps_title">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tipps_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Die folgenden Tipps können dir dabei helfen, das Beste aus dem aktuellen Babyblues zu machen:\n \nBefreie dich von Schuldgefühlen! Niemand verlangt von dir, rund um die Uhr eine strahlende Mutter zu sein. Also solltest auch du diese Erwartungen nicht an dich stellen. Du fühlst dich müde? Überfordert? Gestresst? Sei dir bewusst: Diese Gefühle sind ganz normal – die meisten Mütter teilen sie mit dir.\n\nSobald du deine Gefühle akzeptierst hast, solltest du sie auch zulassen! Rede darüber – so viel und so oft wie möglich. Idealerweise mit deinem Partner, da er nur so die Situation zu verstehen lernt. Umgib dich auch mit anderen, dir nahestehenden Menschen. Sie alle können dazu beitragen, dass der Babyblues so schnell geht, wie er gekommen ist.\n\nLass dir helfen! Eine Arbeitsteilung im Wochenbett ist völlig erlaubt! Viellicht kann dich dein Partner oder deine Familie unterstützen, sobald dir verständlicherweise auch einmal die Kraft fehlt.\n\nSei aktiv! Wöchnerinnen müssen und sollen nicht den ganzen Tag im Bett verbringen! Nimm dein Baby, sobald dein Körper es zulässt, mit in die große weite Welt – und sei es einfach zum nächsten Supermarkt oder zum Spazieren gehen. Du wirst sehen: Die Ablenkung hilft gegen negative Gedanken.\n\nAuch wenn es sich verrückt anhören mag: Gönn dir eine Auszeit und schlaf dich so richtig aus. Eventuell kann dein Partner auch mal eine Nacht aufstehen, um euer Baby zu versorgen. Wichtig ist bei aller Mutterliebe, auch weiterhin Selbstliebe zu betreiben.\n\nZu guter Letzt: Tu nur das, womit du dich wohl fühlst! Wenn du keine Lust auf Besuch hast, sag ihn ab. Wichtig ist, auch von außen für einen entspannten Gemütszustand zu sorgen. Denn entspannte wie zufriedene Eltern machen auch ihr Baby glücklich.\n\n\n " />
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

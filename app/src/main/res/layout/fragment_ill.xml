@@ -11,63 +11,57 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ScrollView
-            android:id="@+id/scrollView2"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <TextView
+            android:id="@+id/illness_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="cursive"
+            android:text="Krankheit"
+            android:textAlignment="center"
+            android:textColor="#EBA5F7"
+            android:textSize="40sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
             app:layout_constraintTop_toBottomOf="@+id/layout_buttons">
 
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:layout_height="564dp">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_illness"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:listitem="@layout/rv_illness"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
-                    <TextView
-                        android:id="@+id/head_ill"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:fontFamily="cursive"
-                        android:text="Krankheitsbilder"
-                        android:textAlignment="center"
-                        android:textColor="#EBA5F7"
-                        android:textSize="30sp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:layout_editor_absoluteX="0dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    <TextView
-                        android:id="@+id/infotext_ill"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginEnd="30dp"
-                        android:fontFamily="@font/roboto"
-                        android:text="Die Gemütszustände, in die eine Mutter rund um die Geburt des Kindes geraten kann, gliedern sich vorrangig in drei verschiedene Kategorien:   das postpartale Stimmungstief (Baby-Blues),  die peripartale Depression, Angst- und Zwangsstörung und  die peripartale Psychose.   Diese Gruppen stehen nicht isoliert nebeneinander, sondern gehen oft fließend ineinander über."
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/head_ill" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </LinearLayout>
-        </ScrollView>
+        </LinearLayout>
 
         <TableLayout
             android:id="@+id/layout_buttons"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="4dp"
             android:stretchColumns="*"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/illness_title"
             app:layout_constraintVertical_weight="1">
 
             <TableRow
@@ -78,7 +72,7 @@
                     android:id="@+id/button_krankheitsbilder"
                     android:layout_width="9dp"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#4D86DC"
+                    android:backgroundTint="#B34D86DC"
                     android:text="Krankheitsbilder"
                     app:strokeColor="#EBA5F7"
                     app:strokeWidth="2dp" />
@@ -87,7 +81,7 @@
                     android:id="@+id/button_ursachen"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#4D86DC"
+                    android:backgroundTint="#B34D86DC"
                     android:text="Ursachen"
                     app:strokeColor="#EBA5F7"
                     app:strokeWidth="2sp" />
@@ -101,7 +95,7 @@
                     android:id="@+id/button_aufklaerung"
                     android:layout_width="31dp"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#4D86DC"
+                    android:backgroundTint="#B34D86DC"
                     android:text="Aufklärung"
                     app:strokeColor="#EBA5F7"
                     app:strokeWidth="2sp" />
@@ -110,7 +104,7 @@
                     android:id="@+id/button_praevention"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#4D86DC"
+                    android:backgroundTint="#B34D86DC"
                     android:text="Prävention"
                     app:strokeColor="#EBA5F7"
                     app:strokeWidth="2sp" />
