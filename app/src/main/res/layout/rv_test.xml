@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Musterfrage ?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/answera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#EBA5F7"
+        android:fontFamily="@font/roboto"
+        android:text="Musterantwort"
+        app:layout_constraintStart_toStartOf="@+id/question_text"
+        app:layout_constraintTop_toBottomOf="@+id/question_text" />
+
+    <RadioButton
+        android:id="@+id/answerd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#EBA5F7"
+        android:fontFamily="@font/roboto"
+        android:text="Musterantwort"
+        app:layout_constraintStart_toStartOf="@+id/answerc"
+        app:layout_constraintTop_toBottomOf="@+id/answerc" />
+
+    <RadioButton
+        android:id="@+id/answerc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#EBA5F7"
+        android:fontFamily="@font/roboto"
+        android:text="Musterantwort"
+        app:layout_constraintStart_toStartOf="@+id/answerb"
+        app:layout_constraintTop_toBottomOf="@+id/answerb" />
+
+    <RadioButton
+        android:id="@+id/answerb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#EBA5F7"
+        android:fontFamily="@font/roboto"
+        android:text="Musterantwort"
+        app:layout_constraintStart_toStartOf="@+id/answera"
+        app:layout_constraintTop_toBottomOf="@+id/answera" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

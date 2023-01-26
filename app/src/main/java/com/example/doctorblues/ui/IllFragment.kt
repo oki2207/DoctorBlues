@@ -144,13 +144,13 @@ class IllFragment: Fragment(){
                             "Die Entscheidung zu einer Haus- oder Geburtshausentbindung kann das Risiko senken, da eine solche Entbindung selbstbestimmter erlebt wird.\n" +
                             "Außerdem sollte bei der Wahl der Gynäkologin / des Gynäkologen und der Hebamme darauf geachtet werden, dass diese positiv unterstützend und nicht verunsichernd arbeiten und auch nach der Entbindung zu längeren Gesprächen und zu Hausbesuchen zur Verfügung stehen.\n" +
                             "Strikte Ruhe nach der Entbindung und in den ersten Wochen p.p. kann das Erkrankungsrisiko senken helfen. Dazu gehört vor allem die Vermeidung von zu viel Besuch, und ausreichender Nachtschlaf (nächtliche Versorgung des Babys durch Klinikpersonal / Familienmitglieder) ist wichtig.\n" +
-                            "Bezüglich des drastischen Hormonabfalles nach der Entbindung stehen einige Prophylaxe-Methoden zur Verfügung.\n" +
+                            "Bezüglich des drastischen Hormonabfalles nach der Entbindung stehen einige Prophylaxe-Methoden zur Verfügung.\n\n" +
                             "Plazenta-Prophylaxe:\n" +
                             "Die natürlichste, den früheren Hebammen vertraute Prophylaxe stellt die mit Hilfe der Plazenta dar. Dazu sollte der Mutterkuchen nach der Entbindung bei max. 45 ° C über etwa 36 Stunden getrocknet, danach pulverisiert und nach Bedarf eingenommen werden. Trocken aufbewahren, nie zu stark erhitzen.\n" +
-                            "Herstellung einer homöopathischen Reihe aus der Plazenta.\n" +
+                            "Herstellung einer homöopathischen Reihe aus der Plazenta.\n\n" +
                             "Progesteron-Prophylaxe:\n" +
                             "Es besteht auch die Möglichkeit einer vorbeugenden Behandlung durch das natürliche Progesteron (nicht das synthetische!) in Form einer Creme. Die Behandlung sollte sofort mit der Entbindung einsetzen.\n" +
-                            "Alle Prophylaxen beziehen sich besonders auf Frauen, die schon einmal an einer postpartalen Depression oder Psychose gelitten haben, auf jene Frauen, deren Schwester oder Mutter von einer PPD oder PPP betroffen waren, auf Frauen, die eine Sterilisation zum Zeitpunkt der Entbindung oder kurz danach planen und schließlich auf jene Frauen, die besonders stark unter dem prämenstruellen Syndrom leiden.",
+                            "Alle Prophylaxen beziehen sich besonders auf Frauen, die schon einmal an einer postpartalen Depression oder Psychose gelitten haben, auf jene Frauen, deren Schwester oder Mutter von einer PPD oder PPP betroffen waren, auf Frauen, die eine Sterilisation zum Zeitpunkt der Entbindung oder kurz danach planen und schließlich auf jene Frauen, die besonders stark unter dem prämenstruellen Syndrom leiden.\n\n\n\n\n\n",
 
                     )
             )

@@ -30,6 +30,46 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvtest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/infotest_text"
+                tools:listitem="@layout/rv_test" />
+
+            <TextView
+                android:id="@+id/einleitung_test_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/roboto"
+                android:text="Diese anonymen Fragebögen helfen betroffenen Müttern bei der Selbsteinschätzung ihrer postpartalen Erkrankung oder posttraumatischen Belastungsstörung nach der Geburt eines Kindes. Wenn Sie anhand eines Fragebogens bemerken, dass Sie postpartal psychisch beeinträchtigt sind, können Sie gerne unsere Hilfsangebote nutzen."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/selftest_title" />
+
+            <TextView
+                android:id="@+id/infotest_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Bitte markieren Sie die Antwort, die am ehesten beschreibt, wie Sie sich in den letzten sieben Tagen gefühlt haben, nicht nur, wie Sie sich heute fühlen. Bei einer Gesamtpunktzahl von 12 und darüber liegt die Vermutung nahe, dass Sie an einer postpartalen Depression leiden."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/einleitung_test_text" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

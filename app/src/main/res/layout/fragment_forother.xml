@@ -37,6 +37,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="30dp"
+                android:fontFamily="@font/roboto"
                 android:text="Was kann der Partner tun?\n\nDer Partner kann das gleiche tun wie bei der Geburt – im Grunde gar nichts und doch ganz viel. Ihr könnt nichts tun, damit es aufhört, das müsst Ihr aber auch gar nicht, denn der Babyblues hört von alleine auf. Rationale Argumente wie “Es gibt doch keinen Grund zu heulen, wir haben ein gesundes Kind und alles ist gut” sind in der Regel eher kontraproduktiv, denn das weiß die Frau selbst. Sie kann ihre Gefühle nur eben nicht abstellen. Also zeigt einfach Verständnis.\n\nDas Wichtigste ist, dass Ihr in dieser Zeit für Eure Partnerin da seid. Sie verwöhnt und ihr zeigt, dass ihr sie liebt und stolz auf sie seid (was meistens mit Tränen der Rührung und Dankbarkeit quittiert wird). Ihr könnt mit ihr über die Geburt reden, Eure Gefühle dabei und wie ihr es erlebt habt. Und ihr könnt ganz praktisch dafür sorgen, dass sie sich auf sich und ihre neue Rolle konzentrieren kann, indem ihr Besucher abwimmelt, das Baby mal übernehmt, damit sie in Ruhe duschen oder schlafen kann und dafür sorgt, dass genug Essen im Haus ist."
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

@@ -74,6 +74,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="#B34D86DC"
                     android:text="Krankheitsbilder"
+                    app:cornerRadius="25sp"
                     app:strokeColor="#EBA5F7"
                     app:strokeWidth="2dp" />
 
@@ -83,6 +84,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="#B34D86DC"
                     android:text="Ursachen"
+                    app:cornerRadius="25sp"
                     app:strokeColor="#EBA5F7"
                     app:strokeWidth="2sp" />
             </TableRow>
@@ -97,6 +99,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="#B34D86DC"
                     android:text="Aufklärung"
+                    app:cornerRadius="25sp"
                     app:strokeColor="#EBA5F7"
                     app:strokeWidth="2sp" />
 
@@ -106,6 +109,7 @@
                     android:layout_height="wrap_content"
                     android:backgroundTint="#B34D86DC"
                     android:text="Prävention"
+                    app:cornerRadius="25sp"
                     app:strokeColor="#EBA5F7"
                     app:strokeWidth="2sp" />
             </TableRow>
