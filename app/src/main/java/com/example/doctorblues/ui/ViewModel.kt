@@ -1,5 +1,7 @@
 package com.example.doctorblues.ui
 
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.doctorblues.data.Repository
@@ -8,7 +10,7 @@ import kotlinx.coroutines.launch
 
 const val TAG = "ViewModel"
 
-open class ViewModel : ViewModel() {
+open class ViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repository = Repository()
 
@@ -16,6 +18,12 @@ open class ViewModel : ViewModel() {
     val questions = repository.questions
     val user = repository.user
 
+    val listesp = listOf<String>("Du bist eine gute Mama",
+        "Kopf hoch, alles wird gut!",
+        "Steinige Wege führen meist zu den schönsten Orten.",
+        "Der Schmerz von Heute ist die Stärke von Morgen.",
+        "Halte durch, ich weiß wie stark du bist. Es wird dir bald wieder besser gehen.",
+        "In Gedanken umarme ich dich und wünsche dir von Herzen gute Besserung.")
 
             fun getContacts() {
                 viewModelScope.launch {

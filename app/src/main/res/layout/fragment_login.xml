@@ -54,26 +54,27 @@
             android:id="@+id/text_passwort_login"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="8dp"
             android:backgroundTint="#4D86DC"
             android:ems="10"
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="@+id/blues_logo"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/blues_logo"
-            app:layout_constraintTop_toBottomOf="@+id/username" />
+            app:layout_constraintTop_toTopOf="@+id/login_button_login" />
 
         <Button
             android:id="@+id/login_button_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="148dp"
             android:backgroundTint="#4D86DC"
             android:text="Login"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/text_passwort_login"
+            app:layout_constraintHorizontal_bias="0.543"
             app:layout_constraintStart_toStartOf="@+id/text_passwort_login"
             app:strokeColor="#EBA5F7"
-            app:strokeWidth="1sp" />
+            app:strokeWidth="1sp"
+            tools:layout_editor_absoluteY="650dp" />
 
         <Button
             android:id="@+id/register_button_login"
@@ -83,8 +84,10 @@
             android:text="Registrieren"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/text_passwort_login"
+            app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="@+id/text_passwort_login"
             app:layout_constraintTop_toBottomOf="@+id/login_button_login"
+            app:layout_constraintVertical_bias="1.0"
             app:strokeColor="#198DDF"
             app:strokeWidth="1sp" />
 
