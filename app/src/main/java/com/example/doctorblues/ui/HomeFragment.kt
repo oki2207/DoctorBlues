@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.SeekBar
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -27,10 +28,31 @@ class HomeFragment: Fragment() {
         )
         return binding.root
     }
-
+    var endPoint = 0
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.textView4.text=viewModel.listesp[(0..viewModel.listesp.size-1).random()]
+
+        //binding.seekBar2.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{ // Wenn es sich verändert
+        binding.seekBar2.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener{
+            override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
+                binding.seekbarValTV.text = "Aktueller Stand: ${(progress+1)}"
+            }
+
+            override fun onStartTrackingTouch(seekBar: SeekBar?) { // Am Start
+                if (seekBar != null){
+                    var startPoint = seekBar.progress
+                }
+            }
+
+            override fun onStopTrackingTouch(seekBar: SeekBar?) { // Am Ende
+                if (seekBar != null){
+                    endPoint = seekBar.progress + 1
+                }
+
+            }
+        })
+
 
 
 

@@ -18,7 +18,7 @@ open class ViewModel(application: Application) : AndroidViewModel(application) {
     val questions = repository.questions
     val user = repository.user
 
-    val listesp = listOf<String>("Du bist eine gute Mama",
+    val listesp = listOf<String>("Du bist eine tolle Mama",
         "Kopf hoch, alles wird gut!",
         "Steinige Wege führen meist zu den schönsten Orten.",
         "Der Schmerz von Heute ist die Stärke von Morgen.",

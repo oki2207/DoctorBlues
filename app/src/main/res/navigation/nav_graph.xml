@@ -23,7 +23,11 @@
     <fragment
         android:id="@+id/selftestFragment"
         android:name="com.example.doctorblues.ui.SelftestFragment"
-        android:label="SelftestFragment" />
+        android:label="SelftestFragment" >
+        <action
+            android:id="@+id/action_selftestFragment_to_questionsFragment"
+            app:destination="@id/questionsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/helpFragment"
         android:name="com.example.doctorblues.ui.HelpFragment"
@@ -70,4 +74,8 @@
             android:id="@+id/action_startFragment_to_helpFragment"
             app:destination="@id/helpFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/questionsFragment"
+        android:name="com.example.doctorblues.ui.QuestionsFragment"
+        android:label="QuestionsFragment" />
 </navigation>
