@@ -33,10 +33,9 @@ class HomeFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.textView4.text=viewModel.listesp[(0..viewModel.listesp.size-1).random()]
 
-        //binding.seekBar2.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener{ // Wenn es sich verändert
         binding.seekBar2.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener{
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                binding.seekbarValTV.text = "Aktueller Stand: ${(progress+1)}"
+                binding.seekbarValTV.text = "Dein Wohlbefinden liegt heute bei ${(progress+0)} von 10"
             }
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) { // Am Start

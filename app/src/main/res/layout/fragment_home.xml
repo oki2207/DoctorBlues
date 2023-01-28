@@ -113,8 +113,8 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="30dp"
-            app:cardBackgroundColor="#4DEBA5F7"
-            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#4D4D86DC"
+            app:cardCornerRadius="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3">
@@ -126,23 +126,22 @@
                 android:layout_height="match_parent"
                 android:max="10"
                 android:progress="3"
-                android:progressTint="#4D86DC"
-                android:thumbTint="#4D86DC" />
+                android:progressTint="#EBA5F7"
+                android:thumbTint="#EBA5F7" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="5dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="20dp"
             app:cardBackgroundColor="#4DEBA5F7"
-            app:cardCornerRadius="25sp"
+            app:cardCornerRadius="0dp"
             app:layout_constraintBottom_toTopOf="@+id/motivation_text_home"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView_seekbar" >
+            app:layout_constraintTop_toBottomOf="@+id/cardView_seekbar">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -152,8 +151,10 @@
                     android:id="@+id/seekbarValTV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Aktueller Stand : 4"
+                    android:fontFamily="@font/roboto"
+                    android:text="Hier speicherst du für heute dein Wohlbefinden!"
+                    android:textColor="#4D86DC"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
