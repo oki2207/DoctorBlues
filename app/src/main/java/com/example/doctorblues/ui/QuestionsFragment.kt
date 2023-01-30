@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import com.example.doctorblues.R
 import com.example.doctorblues.adapter.RvAdapterTest
 import com.example.doctorblues.databinding.FragmentQuestionsBinding
@@ -43,5 +44,8 @@ override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         rvAdapterTest.questionlist(it)
 
     }
+    binding.ergebnisButton.setOnClickListener{
+        findNavController().navigate(StartFragmentDirections.actionStartFragmentToErgebnisFragment())
+}
 }
 }

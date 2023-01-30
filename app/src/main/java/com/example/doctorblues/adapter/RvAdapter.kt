@@ -3,11 +3,10 @@ package com.example.doctorblues.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.doctorblues.R
-import com.example.doctorblues.data.Contacts
+import com.example.doctorblues.data.model.Contacts
 
 class RvAdapter(): RecyclerView.Adapter<RvAdapter.ViewHolder>() {
 
@@ -35,7 +34,7 @@ class RvAdapter(): RecyclerView.Adapter<RvAdapter.ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item:Contacts = content[position]
+        val item: Contacts = content[position]
         holder.name.text = item.name
         holder.adresse.text = item.adress
         holder.number.text = item.phone

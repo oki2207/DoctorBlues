@@ -10,9 +10,8 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.doctorblues.R
-import com.example.doctorblues.adapter.RvAdapter
 import com.example.doctorblues.adapter.RvAdapterIllness
-import com.example.doctorblues.data.DataText
+import com.example.doctorblues.data.model.DataText
 import com.example.doctorblues.databinding.FragmentIllBinding
 
 class IllFragment: Fragment(){

@@ -2,10 +2,8 @@ package com.example.doctorblues.ui
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.doctorblues.data.Repository
-import com.example.doctorblues.data.User
 import kotlinx.coroutines.launch
 
 const val TAG = "ViewModel"

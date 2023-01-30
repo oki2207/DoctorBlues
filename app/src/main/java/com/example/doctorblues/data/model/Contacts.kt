@@ -1,4 +1,4 @@
-package com.example.doctorblues.data
+package com.example.doctorblues.data.model
 
 import com.squareup.moshi.Json
 

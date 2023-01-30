@@ -39,7 +39,7 @@ class SelftestFragment:Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.zumtestButton.setOnClickListener{
-            findNavController().navigate(SelftestFragmentDirections.actionSelftestFragmentToQuestionsFragment())
+            findNavController().navigate(StartFragmentDirections.actionStartFragmentToQuestionsFragment())
         }
 
 

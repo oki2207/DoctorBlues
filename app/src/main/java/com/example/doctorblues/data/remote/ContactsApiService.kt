@@ -1,11 +1,12 @@
-package com.example.doctorblues.data
+package com.example.doctorblues.data.remote
 
+import com.example.doctorblues.data.model.Contacts
+import com.example.doctorblues.data.model.Questions
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
-import retrofit2.http.Query
 
 const val BASE_URL = "https://public.syntax-institut.de/apps/batch4/Oliver/"
 

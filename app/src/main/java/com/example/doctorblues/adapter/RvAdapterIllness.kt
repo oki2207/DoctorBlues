@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.doctorblues.R
-import com.example.doctorblues.data.DataText
+import com.example.doctorblues.data.model.DataText
 
 class RvAdapterIllness(var contentIllness:MutableList<DataText>): RecyclerView.Adapter<RvAdapterIllness.ViewHolder>() {
 

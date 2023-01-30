@@ -7,12 +7,8 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.doctorblues.R
 import com.example.doctorblues.adapter.RvAdapter
-import com.example.doctorblues.data.User
 import com.example.doctorblues.databinding.FragmentHelpBinding
 
 class HelpFragment: Fragment() {

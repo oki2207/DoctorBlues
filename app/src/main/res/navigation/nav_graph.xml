@@ -73,9 +73,19 @@
         <action
             android:id="@+id/action_startFragment_to_helpFragment"
             app:destination="@id/helpFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_questionsFragment"
+            app:destination="@id/questionsFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_ergebnisFragment"
+            app:destination="@id/ergebnisFragment" />
     </fragment>
     <fragment
         android:id="@+id/questionsFragment"
         android:name="com.example.doctorblues.ui.QuestionsFragment"
         android:label="QuestionsFragment" />
+    <fragment
+        android:id="@+id/ergebnisFragment"
+        android:name="com.example.doctorblues.ui.ErgebnisFragment"
+        android:label="ErgebnisFragment" />
 </navigation>
