@@ -4,13 +4,16 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.doctorblues.data.Repository
+import com.example.doctorblues.data.local.getDatabase
 import kotlinx.coroutines.launch
 
 const val TAG = "ViewModel"
 
 open class ViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val repository = Repository()
+    private val database = getDatabase(application)
+    private val repository = Repository(database)
+
 
     val contacts = repository.contacts
     val questions = repository.questions

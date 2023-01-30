@@ -1,5 +1,6 @@
 package com.example.doctorblues.data.model
 
+
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.squareup.moshi.Json

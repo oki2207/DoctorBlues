@@ -83,7 +83,11 @@
     <fragment
         android:id="@+id/questionsFragment"
         android:name="com.example.doctorblues.ui.QuestionsFragment"
-        android:label="QuestionsFragment" />
+        android:label="QuestionsFragment" >
+        <action
+            android:id="@+id/action_questionsFragment_to_ergebnisFragment"
+            app:destination="@id/ergebnisFragment" />
+    </fragment>
     <fragment
         android:id="@+id/ergebnisFragment"
         android:name="com.example.doctorblues.ui.ErgebnisFragment"

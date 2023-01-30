@@ -9,7 +9,7 @@ import com.example.doctorblues.data.model.Questions
 @Database(entities = [Questions::class], version = 1)
 abstract class QuestionsDatabase : RoomDatabase() {
 
-    abstract val guestDatabaseDao: QDatabaseDao
+    abstract val QDatabaseDao: QDatabaseDao
 }
 
 private lateinit var INSTANCE: QuestionsDatabase

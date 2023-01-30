@@ -2,12 +2,16 @@ package com.example.doctorblues.data
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.example.doctorblues.data.local.QuestionsDatabase
+import com.example.doctorblues.data.local.getDatabase
 import com.example.doctorblues.data.model.Contacts
 import com.example.doctorblues.data.model.Questions
 import com.example.doctorblues.data.model.User
 import com.example.doctorblues.data.remote.Api
 
-class Repository {
+class Repository (private val database:QuestionsDatabase) {
+
+
     private val _contacts = MutableLiveData<List<Contacts>>()
     val contacts: LiveData<List<Contacts>>
         get() = _contacts
@@ -21,6 +25,9 @@ class Repository {
     get() = _test
 
 
+    val testQ=database.QDatabaseDao.getAll()
+
+
     var api = Api
 
     suspend fun getContacts(){
@@ -31,6 +38,8 @@ class Repository {
     suspend fun getQuestion() {
         _test.value=api.retrofitService.getQuestion()
     }
+
+
 
 }
 
