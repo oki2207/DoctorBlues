@@ -4,7 +4,7 @@ package com.example.doctorblues.data.model
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.squareup.moshi.Json
-/*
+
 class Answers {
 
     @Entity
@@ -20,5 +20,3 @@ class Answers {
         var answer4: Int,
     )
 }
-
- */

@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.doctorblues.R
 import com.example.doctorblues.data.model.Questions
 
+var answerNumber = 0
 class RvAdapterTest(): RecyclerView.Adapter<RvAdapterTest.ViewHolder>() {
 
     var content:List<Questions> = listOf()
@@ -21,6 +22,16 @@ class RvAdapterTest(): RecyclerView.Adapter<RvAdapterTest.ViewHolder>() {
         var answerb: TextView = itemView.findViewById(R.id.answerb)
         var answerc: TextView = itemView.findViewById(R.id.answerc)
         var answerd: TextView = itemView.findViewById(R.id.answerd)
+    }
+
+    fun getchecked(id: Int){
+       when(id) {
+         2131361886 -> answerNumber +=1
+         2131361884 -> answerNumber +=2
+         2131361885 -> answerNumber +=3
+           else -> answerNumber +=0
+       }
+        println(answerNumber)
     }
 
     fun questionlist(list: List<Questions>) {
@@ -41,6 +52,8 @@ class RvAdapterTest(): RecyclerView.Adapter<RvAdapterTest.ViewHolder>() {
         holder.answerc.text = item.answerc
         holder.answerd.text = item.answerd
         holder.answera.text = item.answera
+
+        holder.answerView.setOnCheckedChangeListener{group, checkedId -> getchecked(checkedId)}
     }
 
     override fun getItemCount(): Int {

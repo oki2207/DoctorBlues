@@ -10,6 +10,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.doctorblues.R
 import com.example.doctorblues.adapter.RvAdapterTest
+import com.example.doctorblues.adapter.answerNumber
 import com.example.doctorblues.databinding.FragmentQuestionsBinding
 import com.example.doctorblues.databinding.FragmentSelftestBinding
 import com.example.doctorblues.ui.StartFragmentDirections.Companion.actionStartFragmentToErgebnisFragment
@@ -48,7 +49,10 @@ class QuestionsFragment: Fragment() {
                 }
 
         binding.ergebnisButton.setOnClickListener {
-            findNavController().navigate(QuestionsFragmentDirections.actionQuestionsFragmentToErgebnisFragment())
+            findNavController().navigate(QuestionsFragmentDirections.actionQuestionsFragmentToErgebnisFragment(
+                answerNumber))
+            println(answerNumber)
+            answerNumber = 0
         }
     }
 }

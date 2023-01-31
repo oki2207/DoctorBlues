@@ -19,21 +19,27 @@ open class ViewModel(application: Application) : AndroidViewModel(application) {
     val questions = repository.testQ
     val user = repository.user
 
-    val listesp = listOf<String>("Du bist eine tolle Mama",
+    val listesp = listOf<String>(
+        "Du bist eine tolle Mama",
         "Kopf hoch, alles wird gut!",
         "Steinige Wege führen meist zu den schönsten Orten.",
         "Der Schmerz von Heute ist die Stärke von Morgen.",
         "Halte durch, ich weiß wie stark du bist. Es wird dir bald wieder besser gehen.",
-        "In Gedanken umarme ich dich und wünsche dir von Herzen gute Besserung.")
+        "In Gedanken umarme ich dich und wünsche dir von Herzen gute Besserung."
+    )
 
-            fun getContacts() {
-                viewModelScope.launch {
-                    repository.getContacts()
+    val ergebnistext = listOf<String>(
+        // TODO: Ergebnistext bei Punktanzahl
+
+    )
+
+    fun getContacts() {
+        viewModelScope.launch {
+            repository.getContacts()
 
 
-
-                        }
-                    }
+        }
+    }
 
     fun getQuestion() {
         viewModelScope.launch {

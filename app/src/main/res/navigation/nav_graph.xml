@@ -91,5 +91,9 @@
     <fragment
         android:id="@+id/ergebnisFragment"
         android:name="com.example.doctorblues.ui.ErgebnisFragment"
-        android:label="ErgebnisFragment" />
+        android:label="ErgebnisFragment" >
+        <argument
+            android:name="value"
+            app:argType="integer" />
+    </fragment>
 </navigation>

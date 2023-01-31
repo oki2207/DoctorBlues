@@ -26,6 +26,13 @@ class ErgebnisFragment: Fragment() {
         )
         return binding.root
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        var score: Int = requireArguments().getInt("value")
+        binding.textresult.text= "Du hast ${score} Punkte"
+    }
 }
 
 
