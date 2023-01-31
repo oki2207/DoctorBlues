@@ -16,7 +16,7 @@ open class ViewModel(application: Application) : AndroidViewModel(application) {
 
 
     val contacts = repository.contacts
-    val questions = repository.questions
+    val questions = repository.testQ
     val user = repository.user
 
     val listesp = listOf<String>("Du bist eine tolle Mama",

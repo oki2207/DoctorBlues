@@ -35,9 +35,7 @@ class QuestionsFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.ergebnisButton.setOnClickListener {
-            findNavController().navigate(QuestionsFragmentDirections.actionQuestionsFragmentToErgebnisFragment())
-        }
+
 
         var rvAdapterTest = RvAdapterTest()
 
@@ -48,6 +46,10 @@ class QuestionsFragment: Fragment() {
             rvAdapterTest.questionlist(it)
 
                 }
+
+        binding.ergebnisButton.setOnClickListener {
+            findNavController().navigate(QuestionsFragmentDirections.actionQuestionsFragmentToErgebnisFragment())
+        }
     }
 }
 
