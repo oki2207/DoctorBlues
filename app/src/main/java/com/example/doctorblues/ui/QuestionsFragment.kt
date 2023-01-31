@@ -35,24 +35,19 @@ class QuestionsFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
-
-
-            var rvAdapterTest = RvAdapterTest()
-
-            binding.rvtest.adapter = rvAdapterTest
-
-            viewModel.questions.observe(viewLifecycleOwner) {
-
-                rvAdapterTest.questionlist(it)
-
-            }
-
-                binding.ergebnisButton.setOnClickListener {
-                findNavController().navigate(StartFragmentDirections.actionStartFragmentToErgebnisFragment())
-
+        binding.ergebnisButton.setOnClickListener {
+            findNavController().navigate(QuestionsFragmentDirections.actionQuestionsFragmentToErgebnisFragment())
         }
+
+        var rvAdapterTest = RvAdapterTest()
+
+        binding.rvtest.adapter = rvAdapterTest
+
+        viewModel.questions.observe(viewLifecycleOwner) {
+
+            rvAdapterTest.questionlist(it)
+
+                }
     }
 }
 

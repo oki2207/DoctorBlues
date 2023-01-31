@@ -11,7 +11,7 @@ import com.example.doctorblues.data.model.Questions
 interface QDatabaseDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insert(guest: Questions)
+    fun insertAll(guest: List<Questions>)
 
     @Query("SELECT * FROM Questions")
     fun getAll(): LiveData<List<Questions>>

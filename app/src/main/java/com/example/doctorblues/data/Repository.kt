@@ -36,7 +36,8 @@ class Repository (private val database:QuestionsDatabase) {
     }
 
     suspend fun getQuestion() {
-        _test.value=api.retrofitService.getQuestion()
+        val quest = api.retrofitService.getQuestion()
+        database.QDatabaseDao.insertAll(quest)
     }
 
 
