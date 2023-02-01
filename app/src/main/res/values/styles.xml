@@ -3,5 +3,8 @@
     <style name="DoctorBlues">
         <item name="fontFamily">@font/megrim</item>
         <item name="android:textSize">40dp</item>
+        <item name="strokeColor">@color/purple_200</item>
+        <item name="strokeWidth">5dp</item>
     </style>
 </resources>
+

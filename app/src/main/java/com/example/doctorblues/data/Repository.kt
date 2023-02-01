@@ -21,12 +21,8 @@ class Repository (private val database:QuestionsDatabase) {
     val user: LiveData<List<User>>
         get() = _user
 
-    private val _test = MutableLiveData<List<Questions>>()
-    val questions: LiveData<List<Questions>>
-    get() = _test
 
-
-    val testQ=database.QDatabaseDao.getAll()
+    val questions=database.QDatabaseDao.getAll()
 
 
 

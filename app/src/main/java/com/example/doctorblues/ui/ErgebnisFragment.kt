@@ -1,17 +1,22 @@
 package com.example.doctorblues.ui
 
+import android.graphics.Color
+import android.graphics.Outline
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.ViewOutlineProvider
+import androidx.cardview.widget.CardView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import com.example.doctorblues.R
 import com.example.doctorblues.databinding.FragmentErgebnisBinding
 
 class ErgebnisFragment: Fragment() {
     private lateinit var binding: FragmentErgebnisBinding
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -27,11 +32,21 @@ class ErgebnisFragment: Fragment() {
         return binding.root
     }
 
+
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
         var score: Int = requireArguments().getInt("value")
-        binding.textresult.text= "Du hast ${score} Punkte"
+        binding.textresult.text = "Du hast ${score} Punkte"
+
+
+        binding.fertigButton.setOnClickListener {
+            findNavController().navigate(
+                ErgebnisFragmentDirections.actionErgebnisFragmentToStartFragment()
+            )
+        }
     }
 }
 

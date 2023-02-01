@@ -38,6 +38,9 @@ class RvAdapterTest(): RecyclerView.Adapter<RvAdapterTest.ViewHolder>() {
         content = list
         notifyDataSetChanged()
 
+
+
+
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.rv_test,parent,false)
