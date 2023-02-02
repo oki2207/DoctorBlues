@@ -26,9 +26,9 @@ class RvAdapterTest(): RecyclerView.Adapter<RvAdapterTest.ViewHolder>() {
 
     fun getchecked(id: Int){
        when(id) {
-         2131361886 -> answerNumber +=1
-         2131361884 -> answerNumber +=2
-         2131361885 -> answerNumber +=3
+         2131361888 -> answerNumber +=1
+         2131361887 -> answerNumber +=2
+         2131361886 -> answerNumber +=3
            else -> answerNumber +=0
        }
         println(answerNumber)
@@ -56,7 +56,7 @@ class RvAdapterTest(): RecyclerView.Adapter<RvAdapterTest.ViewHolder>() {
         holder.answerd.text = item.answerd
         holder.answera.text = item.answera
 
-        holder.answerView.setOnCheckedChangeListener{group, checkedId -> getchecked(checkedId)}
+        holder.answerView.setOnCheckedChangeListener{group, checkedId -> getchecked(checkedId) }
     }
 
     override fun getItemCount(): Int {
