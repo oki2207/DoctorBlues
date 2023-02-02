@@ -18,9 +18,9 @@ class RvAdapterTest(): RecyclerView.Adapter<RvAdapterTest.ViewHolder>() {
 
         var answerView: RadioGroup = itemView.findViewById(R.id.answerView)
         var question: TextView = itemView.findViewById(R.id.question_text)
+        var answerc: TextView = itemView.findViewById(R.id.answerc)
         var answera: TextView = itemView.findViewById(R.id.answera)
         var answerb: TextView = itemView.findViewById(R.id.answerb)
-        var answerc: TextView = itemView.findViewById(R.id.answerc)
         var answerd: TextView = itemView.findViewById(R.id.answerd)
     }
 
