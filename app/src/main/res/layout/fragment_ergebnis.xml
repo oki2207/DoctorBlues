@@ -34,10 +34,10 @@
             android:layout_marginEnd="20dp"
             app:cardBackgroundColor="#4DEBA5F7"
             app:cardCornerRadius="5dp"
-            app:cardElevation="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/texthead">
+            app:layout_constraintTop_toBottomOf="@+id/texthead"
+            app:cardElevation="0dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -82,9 +82,15 @@
 
                 <TextView
                     android:id="@+id/anmerkungtext_text"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/roboto"
                     android:text="Platzhalter"
+                    android:textAlignment="center"
+                    android:textColor="#4D86DC"
+                    android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

@@ -47,8 +47,13 @@ class RvAdapterTest(): RecyclerView.Adapter<RvAdapterTest.ViewHolder>() {
         return ViewHolder(view)
     }
 
+
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item: Questions = content[position]
+
+        //TODO: RadioButtons speichern
+        holder.answerView.clearCheck()
 
         holder.question.text = item.questions
         holder.answerb.text = item.answerb

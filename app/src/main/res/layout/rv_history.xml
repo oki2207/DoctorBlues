@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_history"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Datum"
+        android:textColor="#4D85DB"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:fontFamily="@font/roboto"
+        android:text="6"
+        android:textColor="#4D85DB"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/date_text"
+        app:layout_constraintStart_toEndOf="@+id/date_text"
+        app:layout_constraintTop_toTopOf="@+id/date_text" />
+
+    <TextView
+        android:id="@+id/points_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/roboto"
+        android:text="Punkte"
+        android:textColor="#4D85DB"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/result_text"
+        app:layout_constraintStart_toEndOf="@+id/result_text"
+        app:layout_constraintTop_toTopOf="@+id/result_text"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/line_text2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="_______________________________________________________________________________________________________________________________________________"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="3sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,6 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.doctorblues.data.Repository
 import com.example.doctorblues.data.local.getDatabase
+import com.example.doctorblues.data.model.Score
 import kotlinx.coroutines.launch
 
 const val TAG = "ViewModel"
@@ -13,6 +14,20 @@ open class ViewModel(application: Application) : AndroidViewModel(application) {
 
     private val database = getDatabase(application)
     private val repository = Repository(database)
+
+    var scoreList = repository.scoreList
+
+    fun insertScore(score: Score){
+        viewModelScope.launch {
+            repository.insert(score)
+        }
+    }
+
+    fun delete(){
+        viewModelScope.launch {
+            repository.delete()
+        }
+    }
 
 
 
